@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Poppins", "sofia-pro light", Helvetica, Arial, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: left;
+  margin: 20px 0 20px 10px;
+}
+
+.container {
+  margin: 0;
+  background-color: #AAAAAA;
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+}
+.column {
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  flex: 1 1 auto;
+  height: 400px;
+}
+
+.column1 {
+  background-color: pink;
+}
+
+.column2 {
+  background-color: red;
+}
+
+.column3, .column4 {
+  display: none;
+}
+
+@media screen and (min-width: 641px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .column1 {
+    background-color: blue;
+  }
+
+  .column2 {
+    background-color: purple;
+  }
+
+  .column3 {
+    display: block;
+    background-color: grey;
+  }
+
+  .column4 {
+    display: block;
+    background-color: brown;
+  }
+}
